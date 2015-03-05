@@ -35,13 +35,6 @@ public class SolrConfig {
         return getSolrService(Address.class, coreName, cleanOnStartup);
     }
 
-    @Bean
-    public SolrService personSolrService(@Value("${personSolr.coreName}") String coreName,
-                                       @Value("${createDatabase}") boolean cleanOnStartup) {
-        return getSolrService(Person.class, coreName, cleanOnStartup);
-    }
-
-
     private SolrService getSolrService(Class<? extends ModelObjectInterface> clazz, String coreName, boolean cleanOnStartup) {
         SolrServiceImpl solrService = new SolrServiceImpl();
         solrService.setCoreName(coreName);
@@ -51,3 +44,4 @@ public class SolrConfig {
 
     }
 }
+
