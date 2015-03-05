@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+*.iws
+*.ipr
+*.iml
+target/
+lauritzsolr_frontend/target/
+lauritzsolr_backend/target/
