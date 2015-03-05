@@ -9,11 +9,7 @@ import org.springframework.stereotype.Service;
  * Created by DK on 11/3/14.
  */
 @Service
-public class PersonServiceImpl extends GenericServiceImpl<Person> implements PersonService {
-
-    protected PersonServiceImpl() {
-        super(Person.class);
-    }
+public class PersonServiceImpl implements PersonService {
 
     @Override
     public Person create(String name, String lastName) {
