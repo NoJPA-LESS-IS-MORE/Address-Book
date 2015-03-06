@@ -45,4 +45,8 @@ public class AddressServiceImpl implements AddressService {
         return NQL.search(address).search(NQL.has(address.getCity(), NQL.Comp.LIKE, searchText)).limit(Integer.MAX_VALUE).getList();
     }
 
+
+
+
+
 }
